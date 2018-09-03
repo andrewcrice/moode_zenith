@@ -7,3 +7,5 @@ dtparam=audio=on
 #dtoverlay=pi3-disable-bt
 #disable_overscan=1
 sdtv_mode=1
+framebuffer_width=390
+framebuffer_height=120
