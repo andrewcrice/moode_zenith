@@ -1,6 +1,6 @@
 Description of hardware and software used in this project:
 
-#Hardware
+# Hardware
 * Antique Zenith radio empty cabinet with glass screen and various hardware controls
 * Raspberry original model B (revision 000f, 512MB RAM)
 * Sony USB sound card (actually a headphone adapter from a PS4 silver headphone set)
@@ -9,6 +9,6 @@ Description of hardware and software used in this project:
 * Cables-to-go usb to IDE adapter cable
 * Meanwell RPD-60A power supply
 
-#Software
+# Software
 * 2018-06-27-raspbian-stretch-lite.zip from Moode audio site
 * Moode OS builder 2.5 from http://moodeaudio.org/downloads/mos/mosbuild.sh
