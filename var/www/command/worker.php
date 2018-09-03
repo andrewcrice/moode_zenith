@@ -188,9 +188,9 @@ $result = sysCmd("df | grep root | awk '{print $2}'");
 $msg = $result[0] > 3000000 ? 'File system expanded' : 'File system not expanded yet'; 
 workerLog('worker: ' . $msg);
 // turn on/off hdmi port
-$cmd = $_SESSION['hdmiport'] == '1' ? 'tvservice -p' : 'tvservice -o';
-sysCmd($cmd . ' > /dev/null');
-workerLog('worker: HDMI port ' . ($_SESSION['hdmiport'] == '1' ? 'on' : 'off'));
+//$cmd = $_SESSION['hdmiport'] == '1' ? 'tvservice -p' : 'tvservice -o';
+//sysCmd($cmd . ' > /dev/null');
+//workerLog('worker: HDMI port ' . ($_SESSION['hdmiport'] == '1' ? 'on' : 'off'));
 
 // ensure certain files exist
 if (!file_exists('/var/local/www/currentsong.txt')) {sysCmd('touch /var/local/www/currentsong.txt');}
@@ -1247,8 +1247,8 @@ function runQueuedJob() {
 			ctlBt($_SESSION['w_queueargs']);
 			break;
 		case 'hdmiport':
-			$cmd = $_SESSION['w_queueargs'] == '1' ? 'tvservice -p' : 'tvservice -o';
-			sysCmd($cmd . ' > /dev/null');
+			//$cmd = $_SESSION['w_queueargs'] == '1' ? 'tvservice -p' : 'tvservice -o';
+			//sysCmd($cmd . ' > /dev/null');
 			break;
 		case 'maxusbcurrent':
 			$cmd = $_SESSION['w_queueargs'] == 1 ? 'echo max_usb_current=1 >> ' . '/boot/config.txt' : 'sed -i /max_usb_current/d ' . '/boot/config.txt';
